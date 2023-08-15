@@ -25,7 +25,7 @@ const promptsGetAll = (req, res) => {
  * @param {*} res
  */
 const promptSearch = (args, req, res) => {
-  console.log(args)
+  //console.log(args);
   const filter = { userId: req.user }
   if (args.name) {
     filter.name = { $regex: `${args.name}`, $options: 'i' };
